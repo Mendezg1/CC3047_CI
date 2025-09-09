@@ -1,4 +1,5 @@
 from collections import Counter
+import math
 
 def mean(nums):
     if not nums:
@@ -31,3 +32,6 @@ def variance(nums):
         raise ValueError("List is empty.")
     m = mean(nums)
     return sum((x - m) ** 2 for x in nums) / len(nums)
+
+def ds(nums):
+    return math.sqrt(variance(nums))
