@@ -13,3 +13,8 @@ def testMedian():
     with pytest.raises(ValueError):
         median([])
 
+def testMode():
+    assert mode([1, 1, 2, 3]) == 1
+    assert set(mode([1, 2, 2, 3, 3])) == {2, 3}
+    with pytest.raises(ValueError):
+        mode([1, 2, 3])  
