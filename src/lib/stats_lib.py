@@ -1,6 +1,7 @@
 from collections import Counter
 import math
 
+
 def mean(nums):
     if not nums:
         raise ValueError("List is empty.")
