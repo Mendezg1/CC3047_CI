@@ -26,3 +26,8 @@ def mode(nums):
         raise ValueError("No mode found.")
     return modes[0] if len(modes) == 1 else modes
     
+def variance(nums):
+    if not nums:
+        raise ValueError("List is empty.")
+    m = mean(nums)
+    return sum((x - m) ** 2 for x in nums) / len(nums)
