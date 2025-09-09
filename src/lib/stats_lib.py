@@ -33,5 +33,5 @@ def variance(nums):
     m = mean(nums)
     return sum((x - m) ** 2 for x in nums) / len(nums)
 
-def ds(nums):
+def sd(nums):
     return math.sqrt(variance(nums))
