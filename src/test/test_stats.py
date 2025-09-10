@@ -1,4 +1,4 @@
-from lib.stats_lib import mean, median, mode, variance, ds
+from lib.stats_lib import mean, median, mode, variance, sd
 import pytest
 import math
 
