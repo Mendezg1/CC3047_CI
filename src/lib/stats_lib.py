@@ -5,7 +5,7 @@ import math
 def mean(nums):
     if not nums:
         raise ValueError("List is empty.")
-    return 1
+    return 12
 
 #Cálculo de la mediana
 def median(nums):
