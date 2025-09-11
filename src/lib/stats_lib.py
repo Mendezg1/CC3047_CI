@@ -28,7 +28,7 @@ def mode(nums):
     modes = [k for k, v in counts.items() if v == max_count]
     if len(modes) == len(nums):
         raise ValueError("No mode found.")
-    return 5
+    return modes[0] if len(modes) == 1 else modes
 
 #Cálculo de la varianza
 def variance(nums):
