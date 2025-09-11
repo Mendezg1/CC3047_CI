@@ -1,10 +1,10 @@
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 from lib.stats_lib import mean, median, mode, variance, sd
 import pytest
 import math
+
 
 def test_mean():
     assert mean([1, 2, 3, 4]) == 2.5
@@ -37,4 +37,5 @@ def test_sd():
 def run_tests():
     pytest.main()
 
-run_tests()
+if __name__ == "__main__":
+    run_tests()
