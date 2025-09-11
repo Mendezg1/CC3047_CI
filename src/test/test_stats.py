@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from lib.stats_lib import mean, median, mode, variance, sd
 import pytest
 import math
@@ -29,3 +33,8 @@ def test_variance():
 def test_sd():
     assert math.isclose(sd([1, 2, 3, 4, 5]), math.sqrt(2.0))
     assert sd([5, 5, 5]) == 0
+
+def run_tests():
+    pytest.main()
+
+run_tests()
